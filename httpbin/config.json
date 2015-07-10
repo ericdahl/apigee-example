@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "test",
+            "policies": [
+                {
+                    "name": "AssignMessage.SetEnvHeader.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/AssignMessage/Set/Headers/Header[@name='X-ENV']",
+                            "value": "TEST"
+                        }
+                    ]
+                }
+            ],
+            "proxies": [ ],
+            "targets": [ ]
+        },
+        {
+            "name": "prod",
+            "policies": [
+                {
+                    "name": "AssignMessage.SetEnvHeader.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/AssignMessage/Set/Headers/Header[@name='X-ENV']",
+                            "value": "PROD"
+                        }
+                    ]
+                }
+            ],
+            "proxies": [ ],
+            "targets": [ ]
+        }
+    ]
+}

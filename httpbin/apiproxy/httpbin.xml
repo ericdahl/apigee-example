@@ -2,4 +2,5 @@
 <APIProxy revision="1" name="httpbin">
     <ConfigurationVersion minorVersion="0" majorVersion="4"/>
     <DisplayName>httpbin</DisplayName>
+    <Description>debugging endpoint</Description>
 </APIProxy>

@@ -42,7 +42,8 @@
                 <plugin>
                     <groupId>io.apigee.build-tools.enterprise4g</groupId>
                     <artifactId>apigee-edge-maven-plugin</artifactId>
-                    <version>1.0.0</version>
+                    <version>1.0.1</version>
+
                     <executions>
                         <execution>
                             <id>configure-bundle</id>
@@ -57,6 +58,26 @@
                             <goals>
                                 <goal>deploy</goal>
                             </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>io.apigee.build-tools.enterprise4g</groupId>
+                    <artifactId>proxy-dependency-maven-plugin</artifactId>
+                    <version>2.0.0</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>resolve</goal>
+                            </goals>
+                            <configuration>
+                                <proxySrcDir>${project.basedir}/</proxySrcDir>
+                                <proxyDestDir>${project.basedir}/target</proxyDestDir>
+                                <proxyRefs>
+                                    <proxyRef>${project.basedir}/../commonProxy</proxyRef>
+                                </proxyRefs>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
