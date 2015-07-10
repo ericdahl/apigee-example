@@ -18,10 +18,6 @@
         <Response>
             <Step>
                 <FaultRules/>
-                <Name>xmltojson-1</Name>
-            </Step>
-            <Step>
-                <FaultRules/>
                 <Name>AssignMessage.SetEnvHeader</Name>
             </Step>
         </Response>
