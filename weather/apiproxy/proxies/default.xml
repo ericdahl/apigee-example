@@ -32,7 +32,7 @@
         <Response>
             <Step>
                 <FaultRules/>
-                <Name>Assign-Message-1</Name>
+                <Name>AssignMessage.SetEnvHeader</Name>
             </Step>
         </Response>
     </PostFlow>
