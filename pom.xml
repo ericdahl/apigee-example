@@ -9,8 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+
+
     <modules>
         <module>weather</module>
+        <module>httpbin</module>
     </modules>
 
 </project>
