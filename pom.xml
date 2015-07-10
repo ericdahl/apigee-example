@@ -75,7 +75,7 @@
                                 <proxySrcDir>${project.basedir}/</proxySrcDir>
                                 <proxyDestDir>${project.basedir}/target</proxyDestDir>
                                 <proxyRefs>
-                                    <proxyRef>${project.basedir}/../commonProxy</proxyRef>
+                                    <proxyRef>${project.basedir}/../common</proxyRef>
                                 </proxyRefs>
                             </configuration>
                         </execution>
