@@ -5,10 +5,6 @@
         <Headers>
           <Header name="ENV">ENVIRONMENT</Header>  
         </Headers>
-        <QueryParams/>
-        <FormParams/>
-        <Verb/>
-        <Path/>
     </Set>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
     <AssignTo createNew="false" transport="http" type="request"/>

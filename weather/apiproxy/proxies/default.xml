@@ -10,10 +10,7 @@
                     <FaultRules/>
                     <Name>xmltojson-1</Name>
                 </Step>
-                <Step>
-                    <FaultRules/>
-                    <Name>Assign-Message-1</Name>
-                </Step>                
+
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath &quot;/**&quot;) and (request.verb = &quot;GET&quot;)</Condition>
         </Flow>
@@ -32,6 +29,11 @@
     </RouteRule>
     <PostFlow name="PostFlow">
         <Request/>
-        <Response/>
+        <Response>
+            <Step>
+                <FaultRules/>
+                <Name>Assign-Message-1</Name>
+            </Step>
+        </Response>
     </PostFlow>
 </ProxyEndpoint>
