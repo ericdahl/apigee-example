@@ -2,7 +2,9 @@
 <ProxyEndpoint name="default">
     <Description/>
     <PreFlow name="PreFlow">
-        <Request/>
+        <Request>
+            #service-protection#
+        </Request>
         <Response/>
     </PreFlow>
     <HTTPProxyConnection>
