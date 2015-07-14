@@ -1,3 +1,6 @@
 <Step>
     <Name>SpikeArrest.SpikeProtection</Name>
 </Step>
+<Step>
+    <Name>JSONThreatProtection.JSONCheck</Name>
+</Step>
